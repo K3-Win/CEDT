@@ -6,8 +6,13 @@ int main() {
     int cnt = 0;
     double sum = 0;
     double x;
-    while (cin >> x) {
-        if (x == -1) break;
+    cin >> x; if (x == -1) {
+        cout << "No data";
+        return 0;
+    }
+    double a;
+    while (cin >> a) {
+        if (a == -1) break;
         sum += x;
         cnt++;
     }
